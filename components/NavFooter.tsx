@@ -2,32 +2,16 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import Image from "next/image"
 import Acord from "./Acord"
+import { menuSections } from "@/lib/constants"
 
-const menuSections = [
-  {
-    title: "Компанія",
-    links: ["Про нас", "Команда", "Кар'єра", "Блог"],
-  },
-  {
-    title: "Контакти",
-    links: ["Допомога & Підтримка", "Партнерство", "Приєднуйся до нас"],
-  },
-  {
-    title: "Правова інформація",
-    links: [
-      "Правила & умови",
-      "Повернення коштів & скасування",
-      "Політика конфіденційності",
-      "Політика cookie",
-    ],
-  },
-]
+
 
 export default function NavFooter() {
+  const menuSection = menuSections;
   return (
     <div className="border-y-2 border-[#424242] py-[63px] flex justify-between px-2 flex-col-reverse xl:flex-row items-center xl:items-baseline gap-8 xl:gap-0">
       <nav className="flex xl:gap-[115px] gap-[55px] justify-between text-center xl:text-left flex-col sm:flex-row">
-        {menuSections.map(({ title, links }) => (
+        {menuSection.map(({ title, links }) => (
           <div key={title}>
             <div className="hidden sm:block">
               <h3 className="pb-6 text-[22px] font-bold">{title}</h3>

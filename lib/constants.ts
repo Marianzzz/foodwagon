@@ -1,4 +1,3 @@
-import { reverse } from "dns";
 import { MapPin, ConciergeBell, CreditCard, Donut } from "lucide-react";
 
 export const deals = [
@@ -233,3 +232,22 @@ export const cities = [
   "Сакраменто",
   "Новий Орлеан",
 ];
+export const menuSections = [
+  {
+    title: "Компанія",
+    links: ["Про нас", "Команда", "Кар'єра", "Блог"],
+  },
+  {
+    title: "Контакти",
+    links: ["Допомога & Підтримка", "Партнерство", "Приєднуйся до нас"],
+  },
+  {
+    title: "Правова інформація",
+    links: [
+      "Правила & умови",
+      "Повернення коштів & скасування",
+      "Політика конфіденційності",
+      "Політика cookie",
+    ],
+  },
+]

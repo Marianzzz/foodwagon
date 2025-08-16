@@ -10,7 +10,7 @@ export default function Footer() {
             </div>
             <div className="text-[#F5F5F5] text-[15px] flex items-center sm:justify-between flex-col sm:flex-row">
                 <p>Всі права захищено</p>
-                <p>Розроблено <span className="font-bold">Мар'яном Цивінським</span></p>
+                <p>Розроблено <span className="font-bold">Мар’яном Цивінським</span></p>
             </div>
         </div>
 
