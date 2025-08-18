@@ -13,7 +13,7 @@ export default function SearchFood() {
     const foods = food;
     const showNavigation = foods.length > 6;
 
-    return <section className="w-full bg-[#FEFAF1] pb-[62px] pt-[88px]">
+    return <section className="w-full bg-[#FEFAF1] pb-[62px] md:pt-[88px] pt-[44px]">
         <div className="mx-auto max-w-8xl">
             <div className="flex justify-between items-center flex-col lg:flex-row pb-[88px]">
                 <h2 className="text-[43px] font-bold text-[#212121]">Пошук Їжі</h2>

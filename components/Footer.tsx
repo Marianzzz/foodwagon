@@ -2,7 +2,7 @@ import Cities from "./Cities";
 import NavFooter from "./NavFooter";
 
 export default function Footer() {
-    return <section className="bg-[#212121] pt-[44px] lg:pt-[99px] pb-[20px] sm:pb-[70px] text-[#F5F5F5]">
+    return <footer className="bg-[#212121] pt-[44px] lg:pt-[99px] pb-[20px] sm:pb-[70px] text-[#F5F5F5]">
         <div className="flex flex-col max-w-8xl mx-auto">
             <div className="flex flex-col lg:gap-[99px] gap-[44px] pb-4">
                 <Cities />
@@ -14,5 +14,5 @@ export default function Footer() {
             </div>
         </div>
 
-    </section>
+    </footer>
 }

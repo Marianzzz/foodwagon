@@ -13,11 +13,11 @@ import { MapPin } from "lucide-react";
 export default function PopularItems() {
   const items = popularItems;
 
-  const showNavigation = items.length > 5; 
+  const showNavigation = items.length > 5;
 
   return (
-    <div className="max-w-8xl mx-auto flex flex-col items-center justify-center py-[80px] px-4">
-      <h2 className="pb-[88px] text-[43px] font-bold text-center">Популярні товари</h2>
+    <section className="max-w-8xl mx-auto flex flex-col items-center justify-center py-[40px] md:py-[80px] px-4">
+      <h2 className="pb-[44px] md:pb-[88px] text-[43px] font-bold text-center">Популярні товари</h2>
       <Carousel opts={{ align: "start" }} className="w-full">
         <CarouselContent>
           {items.map(({ photo, place, price, name }) => (
@@ -50,6 +50,6 @@ export default function PopularItems() {
           </>
         )}
       </Carousel>
-    </div>
+    </section>
   );
 }

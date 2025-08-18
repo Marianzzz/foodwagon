@@ -7,7 +7,7 @@ import { Input } from "./ui/input"
 import SearchMobile from "./SearchMobile"
 
 export default function Header() {
-    return <div className="max-w-8xl  mx-auto h-[72px] flex items-center justify-between">
+    return <header className="max-w-8xl  mx-auto h-[72px] flex items-center justify-between">
         <h1 className="text-[#F17228] font-bold text-3xl flex gap-2.5 pl-0.5">
             <Image src="./logo.svg" alt="Логотип" width="28" height="30" /> <span>food<span className="text-[#FFB30E]">wagon</span></span>
         </h1>
@@ -23,5 +23,5 @@ export default function Header() {
             </div>
             <Button variant="secondary" className="text-[#FF8A00] font-bold shadow-[#F17228] shadow-2xl bg-white cursor-pointer hidden md:flex"><UserRound />Login</Button>
         </div>
-    </div>
+    </header>
 }
